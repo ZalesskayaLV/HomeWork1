@@ -8,28 +8,20 @@
 
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int count = 1;
 
-while (count <= number)
+for (int i = 1; i <= number; i++)
 {
-    if (count%2==0)
+    if(i%2==0)
     {
-        Console.Write(count);
-    } 
-    count++;   
-        if (count!=number)
+        Console.Write($"{i}");
+    
+        if(i==number)
         {
-      Console.Write(", "); 
-        }   
-}
-
-/*
-for (int i/2 == 0; i <= number; i++)
-{
-    Console.Write(i);
-    if (i != number)
-    {
+        Console.Write(".");
+        }
+        else
+        {
         Console.Write(", ");
+        }
     }
 }
-*/
